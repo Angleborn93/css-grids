@@ -1,0 +1,372 @@
+body {
+    background: url(./12_col.gif) center top repeat-y;
+    background-size: 90%;
+}
+
+
+#container{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    grid-gap: 10px 15px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 210px);
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3"
+    "main main main main main main main main main aside aside aside"
+    "footer1 footer1 footer1 footer2 footer2 footer2 footer3 footer3 footer3 footer4 footer4 footer4";
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+
+}
+
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
+}
+
+.box2{
+    grid-area: box2;
+    border: 1px solid black;
+}
+
+.box3{
+    grid-area: box3;
+    border: 1px solid black;
+}
+
+.main{
+    grid-area: main;
+    border: 1px solid black;
+}
+
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+ 
+footer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 13px;
+    grid-column: 1/13;
+    height: auto;
+    overflow: hidden;
+}
+
+footer p{
+
+    border: 1px solid rgb(0, 0, 0);
+    margin: 9px;
+    overflow: hidden;
+
+  }
+
+
+.footer1{
+    grid-area: footer1;
+    border: 1px solid black;
+
+}
+
+.footer2{
+    grid-area: footer2;
+    border: 1px solid black;
+}
+
+.footer3{
+    grid-area: footer3;
+    border: 1px solid black;
+}
+
+.footer4{
+    grid-area: footer4;
+    border: 1px solid black;
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+#container{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    grid-gap: 10px 15px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 210px);
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3"
+    "main main main main main main main main aside aside aside aside"
+    "footer1 footer1 footer1 footer2 footer2 footer2 footer3 footer3 footer3 footer4 footer4 footer4";
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+
+}
+
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
+}
+
+.box2{
+    grid-area: box2;
+    border: 1px solid black;
+}
+
+.box3{
+    grid-area: box3;
+    border: 1px solid black;
+}
+
+.main{
+    grid-area: main;
+    border: 1px solid black;
+}
+
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+ 
+footer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 13px;
+    grid-column: 1/13;
+    height: auto;
+    overflow: hidden;
+}
+
+footer p{
+
+    border: 1px solid rgb(0, 0, 0);
+    margin: 9px;
+    overflow: hidden;
+
+  }
+
+
+.footer1{
+    grid-area: footer1;
+    border: 1px solid black;
+
+}
+
+.footer2{
+    grid-area: footer2;
+    border: 1px solid black;
+}
+
+.footer3{
+    grid-area: footer3;
+    border: 1px solid black;
+}
+
+.footer4{
+    grid-area: footer4;
+    border: 1px solid black;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+#container{
+    width: 90%;
+    margin-top: 20px;
+    grid-gap: 15px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 210px);
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3"
+    "main main main main main main aside aside aside aside aside aside"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+
+}
+
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
+}
+
+.box2{
+    grid-area: box2;
+    border: 1px solid black;
+}
+
+.box3{
+    grid-area: box3;
+    border: 1px solid black;
+}
+
+.main{
+    grid-area: main;
+    border: 1px solid black;
+}
+
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+ 
+footer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 210px);
+    grid-gap: 0px;
+    grid-column: 1/13;
+    height: fit-content;
+    overflow: hidden;
+    width: auto;
+    margin-bottom: 75px;
+}
+
+footer p{
+
+    border: 1px solid rgb(0, 0, 0);
+    margin: 9px;
+    overflow: hidden;
+
+  }
+
+
+.footer1{
+    grid-area: footer1;
+    border: 1px solid black;
+
+}
+
+.footer2{
+    grid-area: footer2;
+    border: 1px solid black;
+}
+
+.footer3{
+    grid-area: footer3;
+    border: 1px solid black;
+}
+
+.footer4{
+    grid-area: footer4;
+    border: 1px solid black;
+}
+}
+
+@media screen and (max-width: 768px) {
+#container{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    grid-gap: 10px 15px;
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 210px);
+    grid-template-areas: 
+    "header"
+    "box1"
+    "box2"
+    "box3"
+    "main"
+    "aside";
+   
+}
+header{
+    grid-area: header;
+    border: 1px solid black;
+
+}
+
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
+}
+
+.box2{
+    grid-area: box2;
+    border: 1px solid black;
+}
+
+.box3{
+    grid-area: box3;
+    border: 1px solid black;
+}
+
+.main{
+    grid-area: main;
+    border: 1px solid black;
+}
+
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+ 
+footer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-gap: 13px;
+    grid-column: 1/2;
+    height: auto;
+    overflow: hidden;
+}
+
+footer p{
+
+    border: 1px solid rgb(0, 0, 0);
+    margin: 9px;
+    overflow: hidden;
+
+  }
+
+
+.footer1{
+    grid-area: footer1;
+    border: 1px solid black;
+
+}
+
+.footer2{
+    grid-area: footer2;
+    border: 1px solid black;
+}
+
+.footer3{
+    grid-area: footer3;
+    border: 1px solid black;
+}
+
+.footer4{
+    grid-area: footer4;
+    border: 1px solid black;
+}
+}
+
+
+
+
+
+
+
